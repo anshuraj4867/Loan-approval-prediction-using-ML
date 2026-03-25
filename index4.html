@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Approval System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>LOAN APPROVAL PREDICTION</h1>
+            <p>AI-Powered Decision Engine</p>
+        </div>
+
+        <div class="main">
+            <!-- Form Card -->
+            <div class="card form-card">
+                <h2>Application Data</h2>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input type="number" id="person_age" placeholder="30">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <select id="person_gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Education</label>
+                        <select id="person_education">
+                            <option value="High School">High School</option>
+                            <option value="Bachelor">Bachelor</option>
+                            <option value="Master">Master</option>
+                            <option value="Doctorate">Doctorate</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Annual Income</label>
+                        <input type="number" id="person_income" placeholder="50000">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Experience (Years)</label>
+                        <input type="number" id="person_emp_exp" placeholder="3">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Home Status</label>
+                        <select id="person_home_ownership">
+                            <option value="RENT">RENT</option>
+                            <option value="OWN">OWN</option>
+                            <option value="MORTGAGE">MORTGAGE</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Loan Amount</label>
+                        <input type="number" id="loan_amnt" placeholder="200000">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Loan Intent</label>
+                        <select id="loan_intent">
+                            <option value="EDUCATION">EDUCATION</option>
+                            <option value="MEDICAL">MEDICAL</option>
+                            <option value="PERSONAL">PERSONAL</option>
+                            <option value="VENTURE">VENTURE</option>
+                            <option value="DEBTCONSOLIDATION">DEBTCONSOLIDATION</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interest Rate (%)</label>
+                        <input type="number" step="0.01" id="loan_int_rate" placeholder="9.5">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Loan % Income</label>
+                        <input type="number" step="0.01" id="loan_percent_income" placeholder="0.25">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Credit History (Y)</label>
+                        <input type="number" step="0.01" id="cb_person_cred_hist_length" placeholder="5">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Credit Score</label>
+                        <input type="number" id="credit_score" placeholder="750">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Previous Default</label>
+                        <select id="previous_loan_defaults_on_file">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="btn" onclick="predictLoan()">ANALYZE APPLICATION</button>
+            </div>
+
+            <!-- Result Card -->
+            <div class="card result-card">
+                <h2>Decision</h2>
+                <div class="result-box" id="predictionBox">
+                    <div class="result-content">
+                        <div style="font-size: 24px; color: #a5b4fc;">AWAITING INPUT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
