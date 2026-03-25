@@ -5,7 +5,7 @@ This project is an end-to-end Loan Approval Prediction System built using Machin
 Traditional loan approval processes are manual, time-consuming, and prone to human bias. This project provides a data-driven solution by using machine learning models to predict loan approval with high accuracy.
 The system is designed as a web-based application, where users can enter their details and receive instant predictions.
 
-###Features
+### Features
 1.Machine Learning-based prediction system
 2.Interactive web interface (HTML, CSS, JavaScript)
 3.Flask backend API for real-time predictions
@@ -13,7 +13,7 @@ The system is designed as a web-based application, where users can enter their d
 5.Probability score for better decision understanding
 6.High accuracy using XGBoost model
 
-###Project Architecture
+### Project Architecture
 User Input (Frontend)
         ↓
 JavaScript API Call
@@ -26,7 +26,7 @@ Machine Learning Model (XGBoost)
         ↓
 Prediction Output (Frontend Display)
 
-###Project Structure
+### Project Structure
 ├── app.py              # Flask backend
 ├── loan_model.pkl      # Trained ML model
 ├── scaler.pkl          # Scaler for preprocessing
