@@ -1,7 +1,7 @@
 # Loan-approval-prediction-using-ML
 This project is an end-to-end Loan Approval Prediction System built using Machine Learning and Web Technologies. It automates the process of determining whether a loan application should be approved or rejected based on applicant details.
 
-###Overview
+### Overview
 Traditional loan approval processes are manual, time-consuming, and prone to human bias. This project provides a data-driven solution by using machine learning models to predict loan approval with high accuracy.
 The system is designed as a web-based application, where users can enter their details and receive instant predictions.
 
