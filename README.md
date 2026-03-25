@@ -15,23 +15,23 @@ The system is designed as a web-based application, where users can enter their d
 
 ### Project Architecture
 User Input (Frontend)
-        ↓
+        ->
 JavaScript API Call
-        ↓
+        ->
 Flask Backend (API)
-        ↓
+        ->
 Data Preprocessing (Encoding + Scaling)
-        ↓
+        ->
 Machine Learning Model (XGBoost)
-        ↓
+        ->
 Prediction Output (Frontend Display)
 
 ### Project Structure
-├── app.py              #Flask backend
-├── loan_model.pkl      #Trained ML model
-├── scaler.pkl          #Scaler for preprocessing
-├── label_encoders.pkl  #Encoders for categorical data
-├── index.html          #Frontend UI
-├── styles.css          #Styling
-├── script.js           #Frontend logic
-└── loan3.ipynb         #Model training notebook
+── app.py              #Flask backend
+── loan_model.pkl      #Trained ML model
+── scaler.pkl          #Scaler for preprocessing
+── label_encoders.pkl  #Encoders for categorical data
+── index.html          #Frontend UI
+── styles.css          #Styling
+── script.js           #Frontend logic
+── loan3.ipynb         #Model training notebook
